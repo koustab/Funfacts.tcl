@@ -1,25 +1,49 @@
 
 
-############# Random FunFacts #################
-#A simple script to post random funfacts in a #
-#channel.                                     #
-#                                             #
-#                                             #
-#                                             #
-#                                             #
-#                                             #
-#                                -Error       #
-###############################################
-
+############# Random FunFacts ##################
+# A simple script to post random funfacts in a #
+# channel.                                     #
+#                                              #
+# The bot randomly fetch funfacts from address #
+# http://www.randomfunfacts.com/ and post it   #
+# to the alocated channel in ever x minutes.   #
+#                                              #
+#                                              #
+# Installation:                                #
+# pop the script in your script folder and add #
+# sorce scripts/fact.tcl to your eggdrop conf  #
+# file rehash / restart the bot.               #
+#                                              #
+#                - Error                       #
+#      https://ethicalslacker.net              #
+################################################
+                          
 
 
  package require http
 
-#Bot channel to run the script#
+
+################################################
+#                Configuration                 #
+#                                              #
+#      Alocate a channel for the bot           #
+################################################
+
 set channel "#bottest"
 
-#Random facts time
+
+#################################################
+# Random facts timer. change it according to    #
+# your needs.                                   #
+#################################################
+
 set time 1
+
+#################################################
+# Please dont touch anything bellow unless you  #
+# know what you are doing.                      #
+#################################################
+
 
 if {[string compare [string index $time 0] "!"] == 0} { set timer [string range $time 1 end] } { set timer [expr $time * 60] } 
 if {[lsearch -glob [utimers] "* fact *"] == -1} { utimer $timer fact }
