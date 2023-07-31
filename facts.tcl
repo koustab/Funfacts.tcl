@@ -11,11 +11,13 @@
 #                                              #
 # Installation:                                #
 # pop the script in your script folder and add #
-# sorce scripts/fact.tcl to your eggdrop conf  #
+# source scripts/fact.tcl to your eggdrop conf #
 # file rehash / restart the bot.               #
 #                                              #
 #                - Error                       #
 #      https://ethicalslacker.net              #
+#         irc.oddprotocol.org                  #
+#             #oddprotocol                     #
 ################################################
                           
 
