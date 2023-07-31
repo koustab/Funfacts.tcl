@@ -15,7 +15,6 @@
 # file rehash / restart the bot.               #
 #                                              #
 #                - Error                       #
-#      https://ethicalslacker.net              #
 #         irc.oddprotocol.org                  #
 #             #oddprotocol                     #
 ################################################
