@@ -58,3 +58,6 @@ regexp {<i>(.*?)<\/i>} $page a fact
 putserv "PRIVMSG $channel :Facts: $fact" 
 if {[lsearch -glob [utimers] "* fact *"] == -1} { utimer $timer fact } 
 }
+
+
+putlog "funfact.tcl 1.0 (Random Fun Facts ) by Error Loaded."
