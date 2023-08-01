@@ -13,7 +13,7 @@
 # pop the script in your script folder and add #
 # source scripts/fact.tcl to your eggdrop conf #
 # file rehash / restart the bot.               #
-#                                              #
+#   ** THIS SCRIPT IS A MODIFIED SCRIPT        #
 #                - Error                       #
 #         irc.oddprotocol.org                  #
 #             #oddprotocol                     #
